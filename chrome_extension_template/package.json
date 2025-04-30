@@ -1,8 +1,13 @@
 {
   "name": "chrome_extension_template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A base Chrome Extension project, using React to bring your ideas to reality.",
+  "author": {
+    "name": "James Privett",
+    "url": "https://www.handmadesoftware.dev/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
