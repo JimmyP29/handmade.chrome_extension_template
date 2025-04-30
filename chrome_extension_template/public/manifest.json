@@ -8,6 +8,9 @@
   "side_panel": {
     "default_path": "index.html"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
   "permissions": ["scripting", "tabs", "sidePanel", "commands"],
   "host_permissions": ["http://*/*", "https://*/*"]
 }
