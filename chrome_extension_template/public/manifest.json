@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Chrome Extension Template",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "permissions": ["scripting", "tabs", "sidePanel", "commands"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
