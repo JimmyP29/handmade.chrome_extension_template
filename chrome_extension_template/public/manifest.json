@@ -2,14 +2,31 @@
   "manifest_version": 3,
   "version": "1.0.0",
   "name": "Chrome Extension Template",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Opens Popup",
+      "global": true
+    },
+    "open_side_panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Open the side panel"
+    }
+  },
   "action": {
     "default_popup": "index.html"
   },
   "side_panel": {
     "default_path": "index.html"
-  },
-  "background": {
-    "service_worker": "background.js"
   },
   "permissions": ["scripting", "tabs", "sidePanel", "commands"],
   "host_permissions": ["http://*/*", "https://*/*"]
