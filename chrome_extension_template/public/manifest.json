@@ -5,6 +5,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.handmadesoftware.dev/"],
+      "js": ["content.js"]
+    }
+  ],
   "commands": {
     "_execute_action": {
       "suggested_key": {

@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         background: "src/background/index.ts",
+        content: "src/content/index.ts",
         side_panel: "index.html",
       },
       output: {
